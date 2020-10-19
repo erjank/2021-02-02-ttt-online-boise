@@ -1,24 +1,20 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-etherpad:             # optional: URL for the workshop Etherpad if there is one
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+humandate: "October 27-30"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9 am to 12:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2020-10-27      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2020-10-30        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Kate Hertweck", "Reed Cartwright"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: [""]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["k8hertweck@gmail.com"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+etherpad: https://pad.carpentries.org/2020-10-27-ttt-online-PDT            # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 locations:
   - venue: "Online"
-    address: "https://carpentries.zoom.us/j/FIXME"
-
-  - venue: "Euphoria University"
-    address: "Room A, 123 Forth Street, Blimingen, Euphoria"
-    latlng: "41.7901128,-87.6007318"
+    address: "Zoom"
 
 ---
 
@@ -218,53 +214,65 @@ for more information.
 <h2 id="materials" name="materials">Training Materials and Schedule</h2>
 
 <p>
-  Please see <a href="{{ site.training_site }}">this site</a> for course material and tentative schedule.
+  Please see <a href="{{ site.training_site }}">this site</a> for course materials.
+  Note the example schedule shown there represents a workshop spread across two full days;
+  our modified schedule for four half days is tentatively set as follows:
 </p>
 
 
 <hr/>
-
-<!--
 
 <div class="row">
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td> <td>Welcome </td> </tr>
-      <tr> <td>09:15</td> <td>How Learning Works: The Importance of Practice </td> </tr>
-      <tr> <td>10:20</td> <td>How Learning Works: Expertise and Instruction </td> </tr>
-      <tr> <td>11:10</td> <td>Morning Coffee </td> </tr>
-      <tr> <td>11:25</td> <td>How Learning Works: Working Memory and Cognitive Load </td> </tr>
-      <tr> <td>12:15</td> <td>Building Teaching Skill: Getting Feedback </td> </tr>
-      <tr> <td>12:35</td> <td>Lunch </td> </tr>
-      <tr> <td>13:35</td> <td>Creating a Positive Learning Environment: Motivation and Demotivation </td> </tr>
-      <tr> <td>14:40</td> <td>Creating a Positive Learning Environment: Mindset </td> </tr>
-      <tr> <td>15:20</td> <td>Afternoon Coffee </td> </tr>
-      <tr> <td>15:35</td> <td>Building Teaching Skill: The Importance of Practice </td> </tr>
-      <tr> <td>16:45</td> <td>Wrap-Up and Homework for Tomorrow </td> </tr>
-      <tr> <td>17:05</td> <td>Finish </td> </tr>
-    </table>
+      <tr> <td>09:15</td> <td>Building Skill with Practice </td> </tr>
+      <tr> <td>10:20</td> <td>Expertise and Instruction </td> </tr>
+      <tr> <td>11:10</td> <td>Break </td> </tr>
+      <tr> <td>11:25</td> <td>Memory and Cognitive Load </td> </tr>
+      <tr> <td>12:15</td> <td>Building Skill with Feedback </td> </tr>
+      <tr> <td>12:30</td> <td>Finish</td> </tr>
+     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td> <td>Welcome Back </td> </tr>
-      <tr> <td>09:10</td> <td>Building Teaching Skill: Lesson Study </td> </tr>
-      <tr> <td>10:05</td> <td>Building Teaching Skill: Live Coding </td> </tr>
-      <tr> <td>11:05</td> <td>Morning Coffee </td> </tr>
-      <tr> <td>11:20</td> <td>Building Teaching Skill: Performance Revised </td> </tr>
-      <tr> <td>12:00</td> <td>Lunch </td> </tr>
-      <tr> <td>13:00</td> <td>The Carpentries: Workshop Introductions </td> </tr>
-      <tr> <td>14:10</td> <td>The Carpentries: How We Operate </td> </tr>
-      <tr> <td>15:15</td> <td>Afternoon Coffee </td> </tr>
-      <tr> <td>15:30</td> <td>The Carpentries: Teaching Practices </td> </tr>
-      <tr> <td>16:00</td> <td>Afternoon Wrap-Up </td> </tr>
-      <tr> <td>16:45</td> <td>Finish </td> </tr>
+      <tr> <td>09:05</td> <td>Motivation and Demotivation </td> </tr>
+      <tr> <td>10:20</td> <td>Mindset </td> </tr>
+      <tr> <td>10:50</td> <td>Break </td> </tr>
+      <tr> <td>11:05</td> <td>Teaching is a Skill </td> </tr>
+      <tr> <td>12:15</td> <td>Homework for Tomorrow </td> </tr>
+      <tr> <td>12:30</td> <td>Finish </td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 3</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td> <td>Welcome Back </td> </tr>
+      <tr> <td>09:05</td> <td>Checkout Process </td> </tr>
+      <tr> <td>09:20</td> <td>The Carpentries: How We Operate </td> </tr>
+      <tr> <td>10:30</td> <td>Break </td> </tr>
+      <tr> <td>10:45</td> <td>Live Coding is a Skill </td> </tr>
+      <tr> <td>11:45</td> <td>Preparing to Teach </td> </tr>
+      <tr> <td>12:30</td> <td>Finish</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 4</h3>
+    <table class="table table-striped">      
+      <tr> <td>09:00</td> <td>Welcome Back </td> </tr>
+      <tr> <td>9:05</td> <td>More Practice Live Coding </td> </tr>
+      <tr> <td>10:20</td> <td>Managing a Diverse Classroom </td> </tr>
+      <tr> <td>10:50</td> <td>Break </td> </tr>      
+      <tr> <td>11:05</td> <td>Workshop Introductions </td> </tr>
+      <tr> <td>11:50</td> <td>Putting it Together </td> </tr>
+      <tr> <td>12:15</td> <td>Wrapping Up </td> </tr>
+      <tr> <td>12:30</td> <td>Finish </td> </tr>
     </table>
   </div>
 </div>
-
--->
 
 <!--
   ETHERPAD
@@ -283,10 +291,11 @@ for more information.
 {% if page.etherpad %}
 <hr/>
 
-<p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
-  <br/>
+<h2 id="etherpad">Etherpad</h2>
+<p>
   We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+   <br/>
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
 </p>
 
 {% endif %}
