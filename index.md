@@ -14,7 +14,7 @@ etherpad: https://docs.google.com/document/d/15-zeiWFIVAQ0i6xtU-wvAz1CM0DCFeFlJl
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 locations:
   - venue: "Online"
-    address: "Zoom"
+  - address: "https://boisestate.zoom.us/j/95730936108"
 
 ---
 
