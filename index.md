@@ -3,14 +3,14 @@ layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-humandate: "October 27-30"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9 am to 12:30 pm (PDT)"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2020-10-27      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2020-10-30        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Kate Hertweck", "Reed Cartwright"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+humandate: "February 2-5"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9 am to 12:30 pm (MST)"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2021-2-2      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2021-2-5        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Eric Jankowski", "Zhian Kamvar"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: [""]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["k8hertweck@gmail.com"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-etherpad: https://pad.carpentries.org/2020-10-27-ttt-online-PDT            # optional: URL for the workshop Etherpad if there is one
+contact: ["ericjankowski@boisestate.edu","zkamvar@carpentries.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+etherpad: https://docs.google.com/document/d/15-zeiWFIVAQ0i6xtU-wvAz1CM0DCFeFlJl8TideQYjk/edit?usp=sharing            # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 locations:
   - venue: "Online"
