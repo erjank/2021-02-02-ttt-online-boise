@@ -14,7 +14,7 @@ etherpad: https://docs.google.com/document/d/15-zeiWFIVAQ0i6xtU-wvAz1CM0DCFeFlJl
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 locations:
   - venue: "Online"
-  address: "https://boisestate.zoom.us/j/95730936108"
+  - address: "https://boisestate.zoom.us/j/95730936108"
 
 ---
 
@@ -107,7 +107,7 @@ locations:
 
 {% if online == "online" %}
 
-This is an online event. We will meet using the online videoconference software Zoom. You will need to <a href="https://zoom.us/download">download and install their client</a> to connect with your instructors. The link to use for this event is <{{ loc.address }}>.
+This is an online event. We will meet using the online videoconference software Zoom. You will need to <a href="https://zoom.us/download">download and install their client</a> to connect with your instructors. The link to use for this event is <a href="{{ loc.address }}">{{ loc.address }}</a> P<>.
 
 {% else %}
 {% assign inperson = "true" %}
